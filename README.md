@@ -6,7 +6,7 @@ A professional multi-page website for Animal Care Hospitals, a family-owned vete
 
 ## 🌐 Live Site
 
-👉 [View on GitHub Pages](https://laithmf.github.io/Animal-Care-Hospital-Website-Design/)
+👉 [View on GitHub Pages](https://laitmf.github.io/Animal-Care-Hospital-Website-Design/)
 
 ---
 
@@ -52,15 +52,15 @@ A professional multi-page website for Animal Care Hospitals, a family-owned vete
 ## 🚀 How to Deploy to GitHub Pages
 
 1. Create a new GitHub repository named `Animal-Care-Hospital-Website-Design`
-2. Upload all project files (keep the `images/` folder in the same directory)
+2. Upload all project files including `index.html` (keep the `images/` folder in the same directory)
 3. Go to **Settings → Pages**
 4. Set Source to **Deploy from a branch** → `main` → `/ (root)`
-5. Save — your site will be live at `https://laithfakhruldin.github.io/Animal-Care-Hospital-Website-Design/`
+5. Save — your site will be live at `https://laitmf.github.io/Animal-Care-Hospital-Website-Design/`
 
 To link from your portfolio at **laithfakhruldin.com**, add a project card like:
 
 ```html
-<a href="https://laithfakhruldin.github.io/Animal-Care-Hospital-Website-Design/" target="_blank">
+<a href="https://laitmf.github.io/Animal-Care-Hospital-Website-Design/" target="_blank">
   Project 3 — Animal Care Hospitals Website
 </a>
 ```
