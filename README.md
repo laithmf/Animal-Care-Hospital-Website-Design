@@ -60,7 +60,7 @@ A professional multi-page website for Animal Care Hospitals, a family-owned vete
 To link from your portfolio at **laithfakhruldin.com**, add a project card like:
 
 ```html
-<a href="https://laitmf.github.io/Animal-Care-Hospital-Website-Design/" target="_blank">
+<a href="https://laithmf.github.io/Animal-Care-Hospital-Website-Design/" target="_blank">
   Project 3 — Animal Care Hospitals Website
 </a>
 ```
