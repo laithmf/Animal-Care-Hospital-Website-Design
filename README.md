@@ -6,7 +6,7 @@ A professional multi-page website for Animal Care Hospitals, a family-owned vete
 
 ## 🌐 Live Site
 
-👉 [View on GitHub Pages](https://laithfakhruldin.github.io/animal-care-hospitals/)
+👉 [View on GitHub Pages](https://laithfakhruldin.github.io/Animal-Care-Hospital-Website-Design/)
 
 ---
 
@@ -51,16 +51,16 @@ A professional multi-page website for Animal Care Hospitals, a family-owned vete
 
 ## 🚀 How to Deploy to GitHub Pages
 
-1. Create a new GitHub repository named `animal-care-hospitals`
+1. Create a new GitHub repository named `Animal-Care-Hospital-Website-Design`
 2. Upload all project files (keep the `images/` folder in the same directory)
 3. Go to **Settings → Pages**
 4. Set Source to **Deploy from a branch** → `main` → `/ (root)`
-5. Save — your site will be live at `https://yourusername.github.io/animal-care-hospitals/`
+5. Save — your site will be live at `https://laithfakhruldin.github.io/Animal-Care-Hospital-Website-Design/`
 
 To link from your portfolio at **laithfakhruldin.com**, add a project card like:
 
 ```html
-<a href="https://laithfakhruldin.github.io/animal-care-hospitals/" target="_blank">
+<a href="https://laithfakhruldin.github.io/Animal-Care-Hospital-Website-Design/" target="_blank">
   Project 3 — Animal Care Hospitals Website
 </a>
 ```
@@ -70,7 +70,7 @@ To link from your portfolio at **laithfakhruldin.com**, add a project card like:
 ## 📁 File Structure
 
 ```
-animal-care-hospitals/
+Animal-Care-Hospital-Website-Design/
 ├── Home.html
 ├── Services.html
 ├── Pets Image Gallery.html
@@ -93,4 +93,3 @@ animal-care-hospitals/
 ---
 
 *© 2022 Animal Care Hospitals. All rights reserved.*
-
