@@ -6,7 +6,7 @@ A professional multi-page website for Animal Care Hospitals, a family-owned vete
 
 ## 🌐 Live Site
 
-👉 [View on GitHub Pages](https://laithfakhruldin.github.io/Animal-Care-Hospital-Website-Design/)
+👉 [View on GitHub Pages](https://laithmf.github.io/Animal-Care-Hospital-Website-Design/)
 
 ---
 
