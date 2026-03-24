@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--Animal Care Hospitals — Laith Fakhruldin, CSC 3750-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animal Care Hospitals — Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-name">Animal Care Hospitals</span>
+      <span class="brand-tagline">Compassionate Veterinary Care Since 2001</span>
+    </div>
+    <div class="header-paw" aria-hidden="true">🐾</div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="Home.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="Pets Image Gallery.html">Image Gallery</a>
+      <a href="Coupons.html">Coupons</a>
+      <a href="Contact Us.html" class="active">Contact Us</a>
+      <a href="Resoruces.html">Resources</a>
+      <a href="Review Us.html">Review Us</a>
+    </div>
+  </nav>
+
+  <main class="page-wrap">
+
+    <h1 class="page-heading"><span class="emoji">📬</span> Contact Us</h1>
+
+    <div class="contact-layout">
+
+      <!-- Location Info -->
+      <aside class="contact-info reveal">
+        <h2>Our Clinics</h2>
+        <p style="font-size:.9rem; color:var(--text-light); margin-bottom:1.2em;">For urgent matters or emergencies, please call us directly.</p>
+
+        <div class="contact-clinic">
+          <h3>🏥 Pet Care Clinic</h3>
+          <address>
+            1067 Southfield Rd.<br>
+            Lincoln Park, MI 48146<br><br>
+            <strong>TEL:</strong> 313-382-6656<br>
+            <strong>FAX:</strong> 313-382-3969
+          </address>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11813.56531139248!2d-83.17316!3d42.248815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaae6be8bb6516743!2sPet%20Care%20Clinic!5e0!3m2!1sen!2sus!4v1665242287968!5m2!1sen!2sus"
+            title="Pet Care Clinic Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="contact-clinic">
+          <h3>🏥 Animal Care Hospital of Livonia</h3>
+          <address>
+            28450 Joy Road<br>
+            Livonia, MI 48150<br><br>
+            <strong>TEL:</strong> 734-523-1777<br>
+            <strong>FAX:</strong> 734-523-1779
+          </address>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.4050374318326!2d-83.32511558423094!3d42.355206579187204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b4b4d1dd92aa1%3A0xb2cbfb997e989132!2sAnimal%20Care%20Hospital%20of%20Livonia!5e0!3m2!1sen!2sus!4v1665243800646!5m2!1sen!2sus"
+            title="Animal Care Hospital of Livonia Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </aside>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap reveal">
+        <h2>Send Us a Message</h2>
+        <p>Please use this form to reach us. Your personal data will be used only to respond to your inquiry and will not be used for marketing purposes.</p>
+
+        <form action="mailto:hj0935@wayne.edu" method="post" enctype="text/plain">
+          <div class="form-row-2">
+            <div class="form-row">
+              <input type="text" name="FirstName" placeholder="First Name *" required>
+            </div>
+            <div class="form-row">
+              <input type="text" name="LastName" placeholder="Last Name *" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" placeholder="Email Address *" required>
+          </div>
+          <div class="form-row">
+            <!-- Fixed regex pattern: was missing closing bracket on first group -->
+            <input type="tel" name="phone" placeholder="Phone: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          </div>
+          <div class="form-row">
+            <select name="subject" required>
+              <option value="" disabled selected>What can we help with? *</option>
+              <option>Question about a product, procedure, or service</option>
+              <option>Comment for the hospital</option>
+              <option>Interested in joining our team</option>
+              <option>Question about the website</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <select name="contact_preference" required>
+              <option value="" disabled selected>Preferred contact method *</option>
+              <option>Phone</option>
+              <option>Email</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <select name="location" required>
+              <option value="" disabled selected>Choose a clinic location *</option>
+              <option>Animal Care Hospital of Livonia</option>
+              <option>Pet Care Clinic — Lincoln Park</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <textarea name="message" rows="6" maxlength="400" placeholder="Your message... *" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn-submit">Send Message</button>
+            <button type="reset" class="btn-reset">Reset</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <button onclick="topFunction()" id="myBtn" title="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="Home.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="Review Us.html">Leave a Review</a>
+    </div>
+    <p class="footer-copy">All content copyright &copy; 2022 Animal Care Hospitals. All rights reserved.</p>
+  </footer>
+
+  <script src="myscript.js"></script>
+</body>
+</html>

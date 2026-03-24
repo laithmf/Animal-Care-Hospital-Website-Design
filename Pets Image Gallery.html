@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--Animal Care Hospitals — Laith Fakhruldin, CSC 3750-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animal Care Hospitals — Image Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-name">Animal Care Hospitals</span>
+      <span class="brand-tagline">Compassionate Veterinary Care Since 2001</span>
+    </div>
+    <div class="header-paw" aria-hidden="true">🐾</div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="Home.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="Pets Image Gallery.html" class="active">Image Gallery</a>
+      <a href="Coupons.html">Coupons</a>
+      <a href="Contact Us.html">Contact Us</a>
+      <a href="Resoruces.html">Resources</a>
+      <a href="Review Us.html">Review Us</a>
+    </div>
+  </nav>
+
+  <main class="page-wrap">
+
+    <h1 class="page-heading"><span class="emoji">📸</span> Image Gallery</h1>
+
+    <!-- Video -->
+    <section class="gallery-hero reveal">
+      <video width="560" height="315" controls preload="metadata">
+        <source src="https://cloud.labnimble.com/app/websharepro/share?checkonly=0&path=%2FSHARED%2F%218ECB6ERupvN82pC%2FxGi4Spb7TpydLVuB&preview=1&redirect=1" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    </section>
+    
+    <!-- Thumbnail jump links -->
+    <section class="card reveal">
+      <h2>Our Most Beloved Patients</h2>
+      <p>Click any photo to jump to the full image below.</p>
+      <div class="gallery-thumbs">
+        <a href="#cute_kitten"><img src="images/cat1_200px.png" alt="Cute kitten"></a>
+        <a href="#twin_puppies"><img src="images/twin_puppies_200px.png" alt="Twin Puppies"></a>
+        <a href="#vet_hater_dog"><img src="images/vet_hater_dog_200px.png" alt="Dog at vet"></a>
+        <a href="#dog_climber"><img src="images/climber_dog_200px.png" alt="Climber dog"></a>
+      </div>
+    </section>
+
+    <!-- Scrollable gallery -->
+    <section class="reveal">
+      <h2 style="margin-bottom:.5em;">Our Happy Patients</h2>
+      <p style="font-size:.9rem; color:var(--text-light);">Hover the edges to scroll — click any photo to enlarge</p>
+      <div class="scroller-wrap" id="scrollerWrap">
+        <button class="scroll-arrow scroll-arrow--left" id="arrowLeft" onclick="scrollGallery(-1)" aria-label="Scroll left">&#8592;</button>
+        <div class="media-scroller" id="petScroller">
+          <div class="media-element"><img src="images/pet1-200px.png"  alt="Pet 1"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet2-200px.png"  alt="Pet 2"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet3-200px.png"  alt="Pet 3"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet4-200px.png"  alt="Pet 4"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet5-200px.png"  alt="Pet 5"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet6-200px.png"  alt="Pet 6"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet7-200px.png"  alt="Pet 7"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet8-200px.png"  alt="Pet 8"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet9-200px.png"  alt="Pet 9"  onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet10-200px.png" alt="Pet 10" onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet11-200px.png" alt="Pet 11" onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet12-200px.png" alt="Pet 12" onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet13-200px.png" alt="Pet 13" onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet14-200px.png" alt="Pet 14" onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet15-200px.png" alt="Pet 15" onclick="enlargeImage(this)"></div>
+          <div class="media-element"><img src="images/pet16-200px.png" alt="Pet 16" onclick="enlargeImage(this)"></div>
+        </div>
+        <button class="scroll-arrow scroll-arrow--right" id="arrowRight" onclick="scrollGallery(1)" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </section>
+
+    <!-- Full pet articles -->
+    <section style="margin-top:2.5em;">
+
+      <article class="pet-article reveal" id="cute_kitten">
+        <div class="pet-article-label">Cute Kitten</div>
+        <picture>
+          <source media="(min-width:400px)" srcset="images/cat1_1400px.png 1200w, images/cat1_400px.png 400w" sizes="80vw">
+          <img src="images/cat1_1400px.png" alt="Cute kitten sitting" onclick="enlargeImage(this)" style="cursor:zoom-in;">
+        </picture>
+      </article>
+
+      <article class="pet-article reveal" id="twin_puppies">
+        <div class="pet-article-label">Twin Puppies in the Family</div>
+        <picture>
+          <source media="(min-width:400px)" srcset="images/twin_puppies_1200px.png 1200w, images/twinpuppies_400px.png 400w" sizes="80vw">
+          <img src="images/twin_puppies_1200px.png" alt="Two playful puppies" onclick="enlargeImage(this)" style="cursor:zoom-in;">
+        </picture>
+      </article>
+
+      <article class="pet-article reveal" id="vet_hater_dog">
+        <div class="pet-article-label">Vet Hater Dog</div>
+        <picture>
+          <source media="(min-width:400px)" srcset="images/Vet_hater_dog_1200px.png 1200w, images/Vet_hater_dog_400px.png 400w" sizes="80vw">
+          <img src="images/Vet_hater_dog_1200px.png" alt="Dog at vet" onclick="enlargeImage(this)" style="cursor:zoom-in;">
+        </picture>
+      </article>
+
+      <article class="pet-article reveal" id="dog_climber">
+        <div class="pet-article-label">Monster Dog Climber</div>
+        <picture>
+          <source media="(min-width:400px)" srcset="images/climber_dog_1200px.png 1200w, images/climber_dog_400px.png 400w" sizes="80vw">
+          <img src="images/climber_dog_1200px.png" alt="Dog climbing a fence" onclick="enlargeImage(this)" style="cursor:zoom-in;">
+        </picture>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Image Overlay -->
+  <div id="imageOverlay" class="overlay" onclick="closeImage()">
+    <img id="overlayImg" src="" alt="Enlarged pet image">
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="Contact Us.html">Contact Us</a>
+      <a href="Home.html">Home</a>
+      <a href="Review Us.html">Leave a Review</a>
+    </div>
+    <p class="footer-copy">All content copyright &copy; 2022 Animal Care Hospitals. All rights reserved.</p>
+  </footer>
+
+  <script src="myscript.js"></script>
+  <script>
+    const scroller   = document.getElementById('petScroller');
+    const wrap       = document.getElementById('scrollerWrap');
+    const arrowLeft  = document.getElementById('arrowLeft');
+    const arrowRight = document.getElementById('arrowRight');
+    const STEP       = 216 * 3; // ~3 card widths per click
+
+    function scrollGallery(dir) {
+      const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+
+      if (dir === 1) {
+        // At the end — wrap back to start
+        if (scroller.scrollLeft >= maxScroll - 4) {
+          scroller.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          scroller.scrollBy({ left: STEP, behavior: 'smooth' });
+        }
+      } else {
+        // At the start — wrap to end
+        if (scroller.scrollLeft <= 4) {
+          scroller.scrollTo({ left: maxScroll, behavior: 'smooth' });
+        } else {
+          scroller.scrollBy({ left: -STEP, behavior: 'smooth' });
+        }
+      }
+    }
+
+    // Show/hide arrows on hover over the wrap container
+    wrap.addEventListener('mouseenter', () => {
+      arrowLeft.classList.add('visible');
+      arrowRight.classList.add('visible');
+    });
+    wrap.addEventListener('mouseleave', () => {
+      arrowLeft.classList.remove('visible');
+      arrowRight.classList.remove('visible');
+    });
+  </script>
+</body>
+</html>
